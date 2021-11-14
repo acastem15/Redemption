@@ -427,9 +427,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velMovimiento: 5
   velRotacion: 250
+  rb: {fileID: 1959310789}
   x: 0
   y: 0
-  cronometro: 0
+  estoyAtacando: 0
+  impulsoGolpe: 10
+  space: 0
 --- !u!1 &2144849759
 GameObject:
   m_ObjectHideFlags: 0

@@ -697,7 +697,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 1657595432}
+  m_ComponentOwner: {fileID: 0}
 --- !u!4 &1265540851
 Transform:
   m_ObjectHideFlags: 3
@@ -709,7 +709,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1657595432}
+  - {fileID: 0}
   m_Father: {fileID: 1976061246}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1052,8 +1052,8 @@ MonoBehaviour:
     m_Radius: 1
   m_LegacyHeadingBias: 3.4028235e+38
   m_Rigs:
-  - {fileID: 1475704257}
-  - {fileID: 414838037}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1265540850}
 --- !u!4 &1976061246
 Transform:
@@ -1066,8 +1066,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 7.988311, z: -5.9610057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1475704258}
-  - {fileID: 414838038}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1265540851}
   m_Father: {fileID: 0}
   m_RootOrder: 1

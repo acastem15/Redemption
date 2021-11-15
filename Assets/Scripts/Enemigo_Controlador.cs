@@ -26,7 +26,7 @@ public class Enemigo_Controlador : MonoBehaviour
     // Update is called once per frame
     private void Awake()
     {
-        jugador = GameObject.Find("Knight").transform; 
+        jugador = GameObject.Find("paladin_prop_j_nordstrom").transform; 
         agent = GetComponent<NavMeshAgent>();
     }
 

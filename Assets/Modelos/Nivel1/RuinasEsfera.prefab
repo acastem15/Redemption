@@ -6996,7 +6996,6 @@ MonoBehaviour:
   cronometro: 0
   colocado: 0
   esferaObject: {fileID: 0}
-  termino: 0
 --- !u!1 &6386915725449724787
 GameObject:
   m_ObjectHideFlags: 0

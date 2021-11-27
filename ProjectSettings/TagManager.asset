@@ -9,6 +9,7 @@ TagManager:
   - GoodPilar
   - BadPilar
   - Cup
+  - Portal
   layers:
   - Default
   - TransparentFX

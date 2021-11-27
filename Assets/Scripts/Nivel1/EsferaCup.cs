@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EsferaCup : MonoBehaviour
 {
-    public float esfera =0f;
+    public UnaRuna script;
+    public int esfera; 
     public float cronometro;
     public bool colocado;  
     public GameObject esferaObject; 
@@ -25,7 +26,8 @@ public class EsferaCup : MonoBehaviour
                 {
                     if (colocado)
                     {
-                        esfera += 1; 
+                        script.cantidad +=1;
+                        esfera +=1; 
                         this.gameObject.GetComponent<BoxCollider>().enabled = false;
                         esferaObject.gameObject.transform.SetParent(this.gameObject.transform);
                         cronometro = 0; 

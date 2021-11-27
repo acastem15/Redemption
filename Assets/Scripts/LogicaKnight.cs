@@ -6,12 +6,13 @@ public class LogicaKnight : MonoBehaviour
 {
     public float velMovimiento = 5.0f;
     public float velRotacion = 200.0f;
-    private Animator anim; 
+    public Animator anim; 
     public Rigidbody rb;
     public float x,y; 
     public bool estoyAtacando; 
     public float impulsoGolpe = 10f; 
     public bool space;
+  
 
 
 
@@ -74,6 +75,7 @@ public class LogicaKnight : MonoBehaviour
             
 
         }
+ 
 
     }
     void NoSpace()

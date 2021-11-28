@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 194738896411000978}
   - component: {fileID: 194738896411001005}
   - component: {fileID: 194738896411000977}
-  - component: {fileID: 194738896411000982}
+  - component: {fileID: 111339205}
   m_Layer: 0
   m_Name: Falsefloor
   m_TagString: Paths
@@ -113,7 +113,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &194738896411000982
+--- !u!114 &111339205
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,11 +122,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 194738896411001004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c876820a70449494996aa5f9b3c9338e, type: 3}
+  m_Script: {fileID: 11500000, guid: 03646cc33fb8b3f439a194b2012fdd5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  group:
-  - {fileID: 194738896411000982}
-  - {fileID: 0}
-  - {fileID: 0}
-  revealPath: 1

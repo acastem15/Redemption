@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CogerObjeto : MonoBehaviour
 {
@@ -9,6 +10,14 @@ public class CogerObjeto : MonoBehaviour
     public GameObject shield;
     public GameObject pickedObject =null; 
     private GameObject sphere = null;
+    public  GameObject UIsphere;
+    public GameObject panelFinal; 
+
+    void Start() 
+        {
+            panelFinal.SetActive(false);
+        }
+    
 
     // Update is called once per frame
     void Update()
@@ -26,6 +35,7 @@ public class CogerObjeto : MonoBehaviour
                 pickedObject.gameObject.transform.SetParent(null);
                 pickedObject = null;
                 shield.SetActive(true); 
+                UIsphere.SetActive(false);
                 
             } 
         }
@@ -38,6 +48,7 @@ public class CogerObjeto : MonoBehaviour
             {                
                 sphere = other.gameObject; 
                 shield.SetActive(false); 
+                UIsphere.SetActive(true);
                 //other.GetComponent<CapsuleCollider>().radius=0.2f;
                 //other.GetComponent<CapsuleCollider>().height=0.2f;
                 //other.GetComponent<CapsuleCollider>().center=new Vector3(0f, 0f, 0f);
@@ -51,9 +62,11 @@ public class CogerObjeto : MonoBehaviour
                 pickedObject = other.gameObject; 
                 pickedObject.SetActive(false);
                 
-
-
             }
+        }
+        if (other.gameObject.CompareTag("Portal"))
+        {
+            SceneManager.LoadScene("N1");
         }
 
         

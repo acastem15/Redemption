@@ -1080,6 +1080,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 424ce2b0fd338a94f9c1739b7849e7cd, type: 3}
   m_PrefabInstance: {fileID: 1741235940}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1502578193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4334832856837702683, guid: 6b14ddfd995b3514da3b0a7f982b7557, type: 3}
+  m_PrefabInstance: {fileID: 1069287510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1568754567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GermSlimeTarget (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8070109232193553997, guid: 547e1bb5b288bc14187ab3bdf87891f6, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 547e1bb5b288bc14187ab3bdf87891f6, type: 3}
 --- !u!1001 &1741235940
@@ -1392,6 +1401,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1755857442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8070109232193553997, guid: 547e1bb5b288bc14187ab3bdf87891f6, type: 3}
+  m_PrefabInstance: {fileID: 1707013409}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1755857447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755857442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdbfed1ae4249843b09a2323eabb66f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navMesh: {fileID: 0}
+  Knight: {fileID: 1502578193}
+  DestroyedEffect: {fileID: 0}
+  health: 2
+  Hit: {fileID: 0}
 --- !u!1 &1976061244
 GameObject:
   m_ObjectHideFlags: 0

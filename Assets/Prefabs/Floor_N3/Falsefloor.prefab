@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 194738896411001005}
   - component: {fileID: 194738896411000977}
   - component: {fileID: 194738896411000982}
+  - component: {fileID: 7439061732970381649}
   m_Layer: 0
   m_Name: Falsefloor
   m_TagString: Paths
@@ -120,7 +121,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194738896411001004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c876820a70449494996aa5f9b3c9338e, type: 3}
   m_Name: 
@@ -130,3 +131,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   revealPath: 1
+--- !u!114 &7439061732970381649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194738896411001004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03646cc33fb8b3f439a194b2012fdd5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

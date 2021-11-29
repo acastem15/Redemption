@@ -23,7 +23,7 @@ public class LogicaKnight : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         GameObject enemigo = GameObject.Find("Enemigo");
-        Enemigos_Salud enemyScript = enemigo.GetComponent<Enemigos_Salud>();
+        //Enemigos_Salud enemyScript = enemigo.GetComponent<Enemigos_Salud>();
         
     }
 
@@ -52,6 +52,7 @@ public class LogicaKnight : MonoBehaviour
             if (Input.GetKeyDown("space"))
             {
                 anim.SetBool("Space", true);
+                rb.AddForce(new Vector3 (0,5f,0), ForceMode.Impulse); 
                 space = true; 
             }
         }

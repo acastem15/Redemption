@@ -11,6 +11,9 @@ TagManager:
   - Cup
   - Portal
   - Enemigo
+  - Fire
+  - Paths
+  - info
   layers:
   - Default
   - TransparentFX

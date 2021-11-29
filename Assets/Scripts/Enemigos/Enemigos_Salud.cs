@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using Vector3 = UnityEngine.Vector3;
 
-public class Enemigi_controlador : MonoBehaviour
+public class Enemigos_Salud : MonoBehaviour
 {
     public NavMeshAgent navMesh;
 
@@ -22,14 +22,13 @@ public class Enemigi_controlador : MonoBehaviour
 
     void Awake() 
     {
-        
         navMesh = GetComponent<NavMeshAgent>();
-
     }
 
     void Start()
     {
       m_CurrentHealth = health;
+      
     }
     void Update() 
     {

@@ -10,6 +10,7 @@ public class LogicaKnight : MonoBehaviour
     public Rigidbody rb;
     public float x,y; 
     public bool estoyAtacando; 
+    public float damage = 10.0f;
     public float impulsoGolpe = 10f; 
     public bool space;
   
@@ -21,7 +22,9 @@ public class LogicaKnight : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-
+        GameObject enemigo = GameObject.Find("Enemigo");
+        Enemigos_Salud enemyScript = enemigo.GetComponent<Enemigos_Salud>();
+        
     }
 
     // Update is called once per frame
@@ -29,7 +32,6 @@ public class LogicaKnight : MonoBehaviour
     void FixedUpdate() 
     {
         if (estoyAtacando == false) {
-        
         
         transform.Rotate(0, x*Time.deltaTime*velRotacion, 0);
         transform.Translate(0,0,y*Time.deltaTime*velMovimiento);
@@ -40,12 +42,11 @@ public class LogicaKnight : MonoBehaviour
     {
         x = Input.GetAxis("Horizontal"); 
         y = Input.GetAxis("Vertical");
-        
-
 
         anim.SetFloat("VelX", x);
         anim.SetFloat("VelY", y);
 
+        
         if (estoyAtacando == false) 
         {
             if (Input.GetKeyDown("space"))
@@ -75,7 +76,7 @@ public class LogicaKnight : MonoBehaviour
             
 
         }
- 
+        
 
     }
     void NoSpace()
@@ -94,4 +95,12 @@ public class LogicaKnight : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider golpe)
+    {
+        
+        if(golpe.gameObject.CompareTag("Enemigo") && estoyAtacando == true)
+        {
+            //enemyScript.health -= 5.0f;
+        }
+    }
 }

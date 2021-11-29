@@ -10,6 +10,7 @@ TagManager:
   - BadPilar
   - Cup
   - Portal
+  - Enemigo
   layers:
   - Default
   - TransparentFX

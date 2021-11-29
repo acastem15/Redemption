@@ -30,7 +30,7 @@ public class puntajeContador : MonoBehaviour
         }
         if (other.gameObject.CompareTag("objeto_N3"))
         {
-            puntaje -=5; 
+            puntaje -=10; 
             mensaje= puntaje.ToString(); 
             texto.text = mensaje + " $"; 
 

@@ -15,6 +15,7 @@ TagManager:
   - Paths
   - info
   - objeto_N3
+  - Lava_N3
   layers:
   - Default
   - TransparentFX

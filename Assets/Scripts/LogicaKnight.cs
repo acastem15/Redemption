@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LogicaKnight : MonoBehaviour
 {
@@ -106,6 +107,10 @@ public class LogicaKnight : MonoBehaviour
         if (golpe.tag == "objeto_N3")
         {
             golpe.gameObject.SetActive(false);
+        }
+        if (golpe.tag == "Lava_N3")
+        {
+            SceneManager.LoadScene("N3");
         }
     }
 }

@@ -66,7 +66,7 @@ public class CogerObjeto : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Portal"))
         {
-            SceneManager.LoadScene("N1");
+            SceneManager.LoadScene("N2");
         }
 
         

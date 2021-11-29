@@ -7,6 +7,6 @@ public class controlador_objetos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new Vector3(15,0,0) * Time.deltaTime);
+        transform.Rotate(new Vector3(0,50,0) * Time.deltaTime);
     }
 }

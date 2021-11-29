@@ -1300,10 +1300,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velMovimiento: 5
   velRotacion: 250
+  anim: {fileID: 0}
   rb: {fileID: 3524350751707804587}
   x: 0
   y: 0
   estoyAtacando: 0
+  damage: 10
   impulsoGolpe: 10
   space: 0
 --- !u!1 &4346246802831783445

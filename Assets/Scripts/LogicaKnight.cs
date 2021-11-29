@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LogicaKnight : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class LogicaKnight : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         GameObject enemigo = GameObject.Find("Enemigo");
-        Enemigos_Salud enemyScript = enemigo.GetComponent<Enemigos_Salud>();
+        //Enemigos_Salud enemyScript = enemigo.GetComponent<Enemigos_Salud>();
         
     }
 
@@ -52,6 +53,7 @@ public class LogicaKnight : MonoBehaviour
             if (Input.GetKeyDown("space"))
             {
                 anim.SetBool("Space", true);
+                rb.AddForce(new Vector3 (0,5f,0), ForceMode.Impulse); 
                 space = true; 
             }
         }
@@ -101,6 +103,14 @@ public class LogicaKnight : MonoBehaviour
         if(golpe.gameObject.CompareTag("Enemigo") && estoyAtacando == true)
         {
             //enemyScript.health -= 5.0f;
+        }
+        if (golpe.tag == "objeto_N3")
+        {
+            golpe.gameObject.SetActive(false);
+        }
+        if (golpe.tag == "Lava_N3")
+        {
+            SceneManager.LoadScene("N3");
         }
     }
 }

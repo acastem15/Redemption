@@ -103,5 +103,9 @@ public class LogicaKnight : MonoBehaviour
         {
             //enemyScript.health -= 5.0f;
         }
+        if (golpe.tag == "objeto_N3")
+        {
+            golpe.gameObject.SetActive(false);
+        }
     }
 }

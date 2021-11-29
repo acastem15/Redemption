@@ -14,6 +14,7 @@ TagManager:
   - Fire
   - Paths
   - info
+  - objeto_N3
   layers:
   - Default
   - TransparentFX

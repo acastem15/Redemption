@@ -16,7 +16,7 @@ public class Prueba : MonoBehaviour
     {
         if (other.transform.tag == "Player")
         {
-            myRB.isKinematic = false;
+            myRB.isKinematic = true;
         }
     }
 }

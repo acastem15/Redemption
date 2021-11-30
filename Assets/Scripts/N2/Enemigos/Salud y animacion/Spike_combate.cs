@@ -10,16 +10,7 @@ public class Spike_combate : MonoBehaviour
     public Animator anime; 
     public CantidadMuertos muertos;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
     private void OnTriggerEnter(Collider other) 
     {
         if (other.gameObject.tag == "arma")

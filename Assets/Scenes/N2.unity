@@ -2489,7 +2489,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499711175}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.49889585, y: 0.96694934, z: 0.6964462}
@@ -3418,21 +3418,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &793729884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793729878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 039030888e366954ebdd2a4b3d6334c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidaMax: 0
-  vida_actual: 0
-  barra_vida_imagen: {fileID: 1012276602}
 --- !u!1 &795140158
 GameObject:
   m_ObjectHideFlags: 0
@@ -6545,6 +6530,10 @@ PrefabInstance:
     - target: {fileID: 2833614865784104480, guid: e3cf0986deca1f44983cdf04e7800df4, type: 3}
       propertyPath: m_Name
       value: GermSpike
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833614865784104480, guid: e3cf0986deca1f44983cdf04e7800df4, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     - target: {fileID: 2833614865784104511, guid: e3cf0986deca1f44983cdf04e7800df4, type: 3}
       propertyPath: m_RootOrder

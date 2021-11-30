@@ -14,6 +14,7 @@ public class LogicaKnight : MonoBehaviour
     public float damage = 10.0f;
     public float impulsoGolpe = 10f; 
     public bool space;
+    public float cantidad; 
   
 
 
@@ -38,6 +39,10 @@ public class LogicaKnight : MonoBehaviour
         transform.Translate(0,0,y*Time.deltaTime*velMovimiento);
 
         }
+        if (transform.position.y <  -30)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
+        }
     }
     void Update()
     {
@@ -50,11 +55,12 @@ public class LogicaKnight : MonoBehaviour
         
         if (estoyAtacando == false) 
         {
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown("space") && cantidad ==0)
             {
-                anim.SetBool("Space", true);
                 rb.AddForce(new Vector3 (0,5f,0), ForceMode.Impulse); 
+                anim.SetBool("Space", true);
                 space = true; 
+                cantidad=1; 
             }
         }
 
@@ -85,6 +91,7 @@ public class LogicaKnight : MonoBehaviour
     {
         anim.SetBool("Space", false);
         space = false;
+        cantidad=0;
     }
 
     void DejarGolpear()

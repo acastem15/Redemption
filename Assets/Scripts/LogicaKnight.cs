@@ -14,7 +14,8 @@ public class LogicaKnight : MonoBehaviour
     public float damage = 10.0f;
     public float impulsoGolpe = 10f; 
     public bool space;
-    public float cantidad; 
+    public float cantidad;
+    public GameObject mensaje_inicial; 
   
 
 
@@ -111,13 +112,17 @@ public class LogicaKnight : MonoBehaviour
         {
             //enemyScript.health -= 5.0f;
         }
-        if (golpe.tag == "objeto_N3")
+        if (golpe.tag == "gemasN3" || golpe.tag == "objeto_N3")
         {
             golpe.gameObject.SetActive(false);
         }
         if (golpe.tag == "Lava_N3")
         {
             SceneManager.LoadScene("N3");
+        }
+        if (golpe.tag == "mensaje_inicial")
+        {
+            mensaje_inicial.gameObject.SetActive(true);
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Red_combate : MonoBehaviour
 {
     public int health;
-    public int dano = 2;
+    public int dano;
     public Barra_Vida_Logica BVL;
     public CantidadMuertos muertos;
 
@@ -30,8 +30,9 @@ public class Red_combate : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
             muertos.cantidad += 1;
+            Destroy(gameObject);
+            
         }
     }
 }

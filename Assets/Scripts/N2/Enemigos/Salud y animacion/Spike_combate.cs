@@ -37,9 +37,9 @@ public class Spike_combate : MonoBehaviour
 
         if (health <= 0)
         {
+            muertos.cantidad += 1;
             anime.Play("GermSpike_golpe");
             Destroy(gameObject);
-            muertos.cantidad += 1;
         }
     }
 }

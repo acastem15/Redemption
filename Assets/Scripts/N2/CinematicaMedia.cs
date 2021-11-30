@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CinematicaMedia : MonoBehaviour
 {
@@ -26,9 +27,9 @@ public class CinematicaMedia : MonoBehaviour
             
 
             cronometro += 1*Time.deltaTime;
-            if (cronometro >=10)
+            if (cronometro >= 5)
             { 
-                Application.Quit(); 
+                SceneManager.LoadScene("N3");
                 videoPlayer.SetActive(false); 
                 video.SetActive(false); 
  
@@ -39,7 +40,7 @@ public class CinematicaMedia : MonoBehaviour
         
     }
     private void OnTriggerEnter(Collider other) {
-        if (other.tag == "Player")
+        if (other.tag == "Portal")
         {
            final = true; 
         }

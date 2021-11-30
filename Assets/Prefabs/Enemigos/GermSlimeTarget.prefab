@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 1755857444}
   - component: {fileID: 1755857443}
   - component: {fileID: 7399521625585045640}
+  - component: {fileID: 5166633882735141893}
   m_Layer: 3
   m_Name: GermSlimeTarget
   m_TagString: Enemigo
@@ -313,7 +314,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 4
   dano: 1
+  BVL: {fileID: 0}
   anime: {fileID: 1755857444}
+  muertos: {fileID: 0}
 --- !u!114 &7399521625585045640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,6 +332,23 @@ MonoBehaviour:
   vidaMax: 4
   vida_actual: 4
   barra_vida_imagen: {fileID: 1924594155}
+--- !u!114 &5166633882735141893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8070109232193553997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d3392c9b1384343bca80539f83e98e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  dano: 0
+  BVL: {fileID: 0}
+  anime: {fileID: 1755857444}
+  muertos: {fileID: 0}
 --- !u!1001 &2834995659269953124
 PrefabInstance:
   m_ObjectHideFlags: 0

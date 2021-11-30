@@ -5,8 +5,8 @@ using UnityEngine;
 public class Red_combate : MonoBehaviour
 {
     public int health;
-    public int dano = 2;
-    public Barra_Vida_Logica BVL;
+    public int dano;
+
     public CantidadMuertos muertos;
 
     // Start is called before the first frame update
@@ -24,14 +24,14 @@ public class Red_combate : MonoBehaviour
     {
         if (other.gameObject.tag == "arma")
         {
-            BVL.vida_actual -= dano;
-            BVL.vida_actual -= health;
+            health -= dano;
         }
 
         if (health <= 0)
         {
-            Destroy(gameObject);
             muertos.cantidad += 1;
+            Destroy(gameObject);
+            
         }
     }
 }

@@ -124,5 +124,9 @@ public class LogicaKnight : MonoBehaviour
         {
             mensaje_inicial.gameObject.SetActive(true);
         }
+        if (golpe.tag == "Portal")
+        {
+            print("adios");
+        }
     }
 }

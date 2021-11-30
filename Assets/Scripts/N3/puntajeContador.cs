@@ -41,12 +41,10 @@ public class puntajeContador : MonoBehaviour
         {
             if (puntaje <= 65)
             {
-                print("adios");
                 portal.gameObject.SetActive(true);
             }
             else
             {
-                print("hola");
                 seacabo.gameObject.SetActive(true);
             }
         }

@@ -9,7 +9,7 @@ public class Enemigo_combate : MonoBehaviour
     public Barra_Vida_Logica BVL;
 
     public Animator anime; 
-    //public CantidadMuertos muertos; 
+    public CantidadMuertos muertos; 
     
     // Start is called before the first frame update
     void Start()
@@ -38,7 +38,7 @@ public class Enemigo_combate : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
-            //muertos.cantidad += 1;
+            muertos.cantidad += 1;
         }
     }
 }

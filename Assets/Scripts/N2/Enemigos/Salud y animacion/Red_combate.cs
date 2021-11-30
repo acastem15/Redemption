@@ -7,7 +7,7 @@ public class Red_combate : MonoBehaviour
     public int health;
     public int dano = 2;
     public Barra_Vida_Logica BVL;
-    //public CantidadMuertos muertos;
+    public CantidadMuertos muertos;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +31,7 @@ public class Red_combate : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
-            //muertos.cantidad += 1;
+            muertos.cantidad += 1;
         }
     }
 }

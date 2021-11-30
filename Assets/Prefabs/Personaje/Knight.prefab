@@ -1732,6 +1732,8 @@ MonoBehaviour:
   damage: 10
   impulsoGolpe: 10
   space: 0
+  cantidad: 0
+  mensaje_inicial: {fileID: 0}
 --- !u!1 &6147921380086151822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,6 +2075,10 @@ MonoBehaviour:
   pickedObject: {fileID: 0}
   UIsphere: {fileID: 0}
   panelFinal: {fileID: 0}
+  salida: 0
+  videoPlayer: {fileID: 0}
+  video: {fileID: 0}
+  cronometro: 0
 --- !u!114 &6478489400423730165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2101,8 +2107,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: a68faff445db32745973074ca5d0e40f, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

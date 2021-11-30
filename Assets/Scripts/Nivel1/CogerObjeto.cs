@@ -17,10 +17,12 @@ public class CogerObjeto : MonoBehaviour
   
     public GameObject video; 
     public float cronometro; 
+    private AudioSource sonido;
 
     void Start() 
         {
             panelFinal.SetActive(false);
+            sonido = GetComponent<AudioSource>();
         }
     
 
@@ -90,7 +92,7 @@ public class CogerObjeto : MonoBehaviour
         if (other.gameObject.CompareTag("Portal"))
         {
             salida = true; 
-
+            sonido.Play();
         }
 
         

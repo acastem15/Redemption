@@ -9,11 +9,12 @@ public class CinematicaFinal : MonoBehaviour
   
     public GameObject video; 
     public float cronometro; 
+    private AudioSource sonido;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        sonido = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,6 +42,7 @@ public class CinematicaFinal : MonoBehaviour
         if (other.tag == "Player")
         {
            final = true; 
+           sonido.Play();
         }
     }
 }

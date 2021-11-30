@@ -6,19 +6,8 @@ public class Jugador_combate : MonoBehaviour
 {
     public int health;
     public int dano;
-
+    public Animator anime; 
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other) 
     {
         if (other.gameObject.tag == "Enemigo")
@@ -28,7 +17,7 @@ public class Jugador_combate : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            anime.SetBool("muerto", true);
         }
     }
 }

@@ -6,7 +6,6 @@ public class Spike_combate : MonoBehaviour
 {
     public int health;
     public int dano = 2;
-    public Barra_Vida_Logica BVL;
 
     public Animator anime; 
     public CantidadMuertos muertos;
@@ -30,8 +29,6 @@ public class Spike_combate : MonoBehaviour
                 anime.Play("GermSpike_golpe");
             }
 
-            BVL.vida_actual -= dano;
-            BVL.vida_actual -= health;
             health -= dano;
         }
 

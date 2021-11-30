@@ -27,7 +27,7 @@ public class CinematicaMedia : MonoBehaviour
             
 
             cronometro += 1*Time.deltaTime;
-            if (cronometro >=10)
+            if (cronometro >= 5)
             { 
                 SceneManager.LoadScene("N3");
                 videoPlayer.SetActive(false); 

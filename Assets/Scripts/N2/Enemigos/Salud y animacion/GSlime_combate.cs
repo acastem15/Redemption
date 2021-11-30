@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class GSlime_combate : MonoBehaviour
 {
-    public int health = 4;
-    public int dano = 2;
-    public Barra_Vida_Logica BVL;
+    public int health;
+    public int dano;
     public Animator anime; 
     public CantidadMuertos muertos; 
     
@@ -19,9 +18,7 @@ public class GSlime_combate : MonoBehaviour
             {
                 anime.Play("GermSlime_golpe");
             }
-
-            BVL.vida_actual -= dano;
-            BVL.vida_actual = health;
+            health -= dano;
         }
 
         if (health <= 0)

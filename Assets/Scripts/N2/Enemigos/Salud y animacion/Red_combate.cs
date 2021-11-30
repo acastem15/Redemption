@@ -6,7 +6,7 @@ public class Red_combate : MonoBehaviour
 {
     public int health;
     public int dano;
-    public Barra_Vida_Logica BVL;
+
     public CantidadMuertos muertos;
 
     // Start is called before the first frame update
@@ -24,8 +24,7 @@ public class Red_combate : MonoBehaviour
     {
         if (other.gameObject.tag == "arma")
         {
-            BVL.vida_actual -= dano;
-            BVL.vida_actual -= health;
+            health -= dano;
         }
 
         if (health <= 0)

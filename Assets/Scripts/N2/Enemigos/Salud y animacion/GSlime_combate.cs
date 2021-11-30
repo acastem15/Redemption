@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Enemigo_combate : MonoBehaviour
 {
-    public int health;
-    public int dano;
+    public int health = 4;
+    public int dano = 2;
+    public Barra_Vida_Logica BVL;
 
     public Animator anime; 
+    public CantidadMuertos muertos; 
     
     // Start is called before the first frame update
     void Start()
@@ -29,12 +31,14 @@ public class Enemigo_combate : MonoBehaviour
                 anime.Play("GermSlime_golpe");
             }
 
-            health -= dano;
+            BVL.vida_actual -= dano;
+            BVL.vida_actual = health;
         }
 
         if (health <= 0)
         {
             Destroy(gameObject);
+            muertos.cantidad += 1;
         }
     }
 }

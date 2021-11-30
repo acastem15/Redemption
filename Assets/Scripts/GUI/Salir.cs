@@ -18,7 +18,7 @@ public class Salir : MonoBehaviour
     public void salir()
         {
             Application.Quit(); 
-            Debug.Log("Se ha salido exitoso");
+            //Debug.Log("Se ha salido exitoso");
 
         }
     

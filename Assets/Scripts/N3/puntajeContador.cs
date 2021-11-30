@@ -8,6 +8,8 @@ public class puntajeContador : MonoBehaviour
     public int puntaje = 100; 
     public string mensaje; 
     public Text texto; 
+    public GameObject portal;
+    public GameObject seacabo;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,17 @@ public class puntajeContador : MonoBehaviour
             mensaje= puntaje.ToString(); 
             texto.text = mensaje + " $"; 
 
+        }
+        if (other.gameObject.CompareTag("meta_N3"))
+        {
+            if (puntaje <= 65)
+            {
+                portal.gameObject.SetActive(true);
+            }
+            else
+            {
+                seacabo.gameObject.SetActive(true);
+            }
         }
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18827605, g: 0.19113812, b: 0.1910977, a: 1}
+  m_IndirectSpecularColor: {r: 0.1882762, g: 0.19113812, b: 0.19109797, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7374,7 +7374,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Has cedido a la pereza. Es bueno descansar pero...
+  m_Text: "Has cedido a la gula. Tus energ\xEDas caen dr\xE1sticamente..."
 --- !u!222 &1343971828
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7791,9 +7791,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e271ea0a8c095e4c85a8317633a0254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 40
+  health: 1
   dano: 1
-  anime: {fileID: 0}
+  anime: {fileID: 1502578199}
+  muerto: 0
+  panel: {fileID: 1645526961}
+--- !u!95 &1502578199 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7026626953009251547, guid: 6b14ddfd995b3514da3b0a7f982b7557, type: 3}
+  m_PrefabInstance: {fileID: 1069287510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1502578201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8396,7 +8403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1645526962
 MonoBehaviour:
   m_ObjectHideFlags: 0

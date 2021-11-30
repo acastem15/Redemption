@@ -12,6 +12,11 @@ public class CogerObjeto : MonoBehaviour
     private GameObject sphere = null;
     public  GameObject UIsphere;
     public GameObject panelFinal; 
+    public bool salida; 
+    public GameObject videoPlayer; 
+  
+    public GameObject video; 
+    public float cronometro; 
 
     void Start() 
         {
@@ -22,6 +27,24 @@ public class CogerObjeto : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (salida)
+        {
+            videoPlayer.SetActive(true); 
+            video.SetActive(true); 
+
+            cronometro += 1*Time.deltaTime;
+            if (cronometro >=10)
+            { 
+                SceneManager.LoadScene("N2");
+                videoPlayer.SetActive(false); 
+                video.SetActive(false); 
+ 
+                
+
+            }
+            
+        }
         //Esfera movimiento 
 
         if (pickedObject != null)
@@ -66,7 +89,8 @@ public class CogerObjeto : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Portal"))
         {
-            SceneManager.LoadScene("N2");
+            salida = true; 
+
         }
 
         

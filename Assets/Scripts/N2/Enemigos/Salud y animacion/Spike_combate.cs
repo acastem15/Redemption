@@ -9,7 +9,7 @@ public class Spike_combate : MonoBehaviour
     public Barra_Vida_Logica BVL;
 
     public Animator anime; 
-    //public CantidadMuertos muertos;
+    public CantidadMuertos muertos;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +39,7 @@ public class Spike_combate : MonoBehaviour
         {
             anime.Play("GermSpike_golpe");
             Destroy(gameObject);
-            //muertos.cantidad += 1;
+            muertos.cantidad += 1;
         }
     }
 }

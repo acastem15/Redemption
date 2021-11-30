@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18827605, g: 0.19113812, b: 0.1910977, a: 1}
+  m_IndirectSpecularColor: {r: 0.1882762, g: 0.19113812, b: 0.19109797, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -275,7 +275,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &54066155
 GameObject:
@@ -1488,6 +1488,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 147949967}
     m_Modifications:
+    - target: {fileID: 1907460151, guid: 126f10c54fce41d4aa610945f0da1c61, type: 3}
+      propertyPath: dano
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907460151, guid: 126f10c54fce41d4aa610945f0da1c61, type: 3}
+      propertyPath: muertos
+      value: 
+      objectReference: {fileID: 1502578194}
     - target: {fileID: 2742523207603312984, guid: 126f10c54fce41d4aa610945f0da1c61, type: 3}
       propertyPath: m_Name
       value: BloodCellTarget
@@ -1615,6 +1623,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 202e9c3264a5dfc488ba80a3b189828a, type: 3}
+--- !u!1 &392354261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6160937677740068850, guid: 202e9c3264a5dfc488ba80a3b189828a, type: 3}
+  m_PrefabInstance: {fileID: 392354260}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &399045658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2734,7 +2747,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3375,6 +3388,7 @@ MonoBehaviour:
   dano: 1
   BVL: {fileID: 0}
   anime: {fileID: 793729883}
+  muertos: {fileID: 0}
 --- !u!95 &793729883
 Animator:
   serializedVersion: 3
@@ -6020,6 +6034,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 147949967}
     m_Modifications:
+    - target: {fileID: 1907460151, guid: 126f10c54fce41d4aa610945f0da1c61, type: 3}
+      propertyPath: dano
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907460151, guid: 126f10c54fce41d4aa610945f0da1c61, type: 3}
+      propertyPath: muertos
+      value: 
+      objectReference: {fileID: 1502578194}
     - target: {fileID: 2742523207603312984, guid: 126f10c54fce41d4aa610945f0da1c61, type: 3}
       propertyPath: m_Name
       value: BloodCellTarget (1)
@@ -7319,6 +7341,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4334832856837702683, guid: 6b14ddfd995b3514da3b0a7f982b7557, type: 3}
   m_PrefabInstance: {fileID: 1069287510}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1502578194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502578193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79665130f5064e346bf749ec919e664b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cantidad: 0
+  portal: {fileID: 392354261}
 --- !u!114 &1502578198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8673,7 +8709,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907460148}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 029b7b60eb7edbc4eb82d3604ec8f3e5, type: 3}
   m_Name: 
@@ -9279,7 +9315,7 @@ RectTransform:
   m_Children:
   - {fileID: 268273775}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9628,6 +9664,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 147949967}
     m_Modifications:
+    - target: {fileID: 1907460151, guid: 126f10c54fce41d4aa610945f0da1c61, type: 3}
+      propertyPath: dano
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907460151, guid: 126f10c54fce41d4aa610945f0da1c61, type: 3}
+      propertyPath: muertos
+      value: 
+      objectReference: {fileID: 1502578194}
     - target: {fileID: 2742523207603312984, guid: 126f10c54fce41d4aa610945f0da1c61, type: 3}
       propertyPath: m_Name
       value: BloodCellTarget (2)
